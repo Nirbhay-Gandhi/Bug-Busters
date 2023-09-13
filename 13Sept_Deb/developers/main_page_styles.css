@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #2d2d2d, #1a1a1a);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+   background: rgba(34, 34, 34, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #4e7fff;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.user-info h3 {
+    margin: 0;
+    color: #fff; 
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 18px;
+    color: #fff; 
+}
+
+.project-info h3 {
+    color: #4e7fff;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.project-info label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff; 
+    font-size: 18px;
+}
+
+.task-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.9); 
+    border: 1px solid #333; 
+    border-radius: 8px;
+}
+
+.task-section h3 {
+    color: #4e7fff; 
+    font-size: 24px;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffcccb;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    color: #ff0000;
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 90%;
+    }
+}
