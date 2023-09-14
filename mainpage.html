@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<Style>
+     body {
+            background: url(a.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+        header {
+            background-color: aqua;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+a {
+        color: #1b1818; /* Set the color you want here */
+        text-decoration: none; /* Remove underlines by default */
+    }
+
+    /* Change the hyperlink color when hovered over */
+    a:hover {
+        color: #bcc4bc;
+    }
+ul {
+            list-style-type: none;
+            padding: 10;
+        }
+
+        li {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .project-title {
+            font-weight: bold;
+        }
+
+        .project-description {
+            font-style: italic;
+        }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="homepage.html"> <img src="bug.png" width="35" height="35" class="d-inline-block align-top" alt=""> BugTrackSys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="homepage.html">Home</a>
+            <a class="nav-item nav-link active" href="importuser.html">Import</a>
+            <a class="nav-item nav-link active" href="registerpage.html">Register</a>
+            <a class="nav-item nav-link active" href="loginuser.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+    <header>
+    <h1>Welcome, [User's Name]</h1>
+     </header>
+    <p>Email Address: [User's Email Address]</p>
+    <p>Role: [User's Role]</p>
+    <p>Last Logged In: [Last Logged In Date and Time]</p>
+
+    <h2>Your Projects:</h2>
+    <ul>
+        <li>
+            <span class="project-title"> <a href="projectDet/project detailpage.html">Project 1</a></span><br>
+           
+        </li>
+        <li>
+            <span class="project-title"><a href="projectDet/projectdetail2.html">Project 2</a></span><br>
+          
+        </li>
+        <li>
+            <span class="project-title"><a href="projectDet/projectdetail3.html">Project 3</a></span><br>
+                    </li>
+        <!-- Add more project items as needed -->
+    </ul>
+    <h2><a href="createproject.html">Create a New Project</a></h2>
+    
+</div>
+</body>
+</html>

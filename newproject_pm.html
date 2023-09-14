@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="np_pm.css">
+    
+    <title>Create New Project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="homepage.html"> <img src="bug.png" width="35" height="35" class="d-inline-block align-top" alt=""> BugTrackSys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="homepage.html">Home</a>
+            <a class="nav-item nav-link active" href="importuser.html">Import</a>
+            <a class="nav-item nav-link active" href="registerpage.html">Register</a>
+            <a class="nav-item nav-link active" href="loginuser.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h2>Create New Project</h2>
+        <form id="newProjectForm">
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" name="projectName" required>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="teamMembers">Team Members:</label>
+            <select id="teamMembers" name="teamMembers" multiple required>
+                <option value="developer1">Developer 1</option>
+                <option value="developer2">Developer 2</option>
+                <option value="tester1">Tester 1</option>
+                <option value="tester2">Tester 2</option>
+            </select>
+
+            <button type="submit">Create Project</button>
+        </form>
+    </div>
+
+    <!-- Modal Popup for Project Creation -->
+    <!-- <div class="modal fade" id="projectCreationModal" tabindex="-1" role="dialog"
+        aria-labelledby="projectCreationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectCreationModalLabel">Project Created</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your new project has been successfully created!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <footer id="footer" style="text-align: center;">
+  
+  
+  
+        <p>© Copyright 2023 BugTrackSys by BugSmashers</p>
+      
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="project_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+/* CSS for Bug Tracking System Main Page */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #2d2d2d, #1a1a1a);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #4e7fff;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4e7fff;
+}
+
+#userInfo, #projectList {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.bugList {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: #4e7fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#footer{
+  text-align: center;
+  padding: 7% 15%;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bug_tracking_styles.css">
+    <title>Bug Tracking System - Tester Main Page</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="homepage.html"> <img src="bug.png" width="35" height="35" class="d-inline-block align-top" alt=""> BugTrackSys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="homepage.html">Home </a>
+            <a class="nav-item nav-link active" href="importuser/importuser.html">Import</a>
+            <a class="nav-item nav-link active" href="register/registerpage.html">Register </a>
+            <a class="nav-item nav-link active" href="login/loginuser.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h2>Bug Tracking System - Tester Main Page</h2>
+        <div id="userInfo">
+            <h3>User Information</h3>
+            <p><strong>Username:</strong> JohnTester</p>
+            <p><strong>Email:</strong> john.tester@example.com</p>
+        </div>
+
+        <div id="projectList">
+            <h3>Assigned Projects</h3>
+            <ul>
+                <li>
+                    <h4>Project 1</h4>
+                    <ul class="bugList">
+                        <li>Bug 1</li>
+                        <li>Bug 2</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Project 2</h4>
+                    <ul class="bugList">
+                        
+                        <li>Bug 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <a href="report_bug.html">Report a New Bug</a>
+    </div>
+    <footer id="footer" style="text-align: center;">
+  
+  
+  
+        <p>© Copyright 2023 BugTrackSys by BugSmashers</p>
+      
+      </footer>
+
+    <script src="bug_tracking_script.js"></script>
+</body>
+
+</html>
