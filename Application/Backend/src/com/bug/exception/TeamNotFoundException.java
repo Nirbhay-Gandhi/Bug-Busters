@@ -1,13 +1,13 @@
 package bugSmasher.exceptions;
 
-public class BugNotFoundException extends RuntimeException {
+public class TeamNotFoundException extends RuntimeException {
 
-	public BugNotFoundException() {
+	public TeamNotFoundException() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public BugNotFoundException(String message) {
+	public TeamNotFoundException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}

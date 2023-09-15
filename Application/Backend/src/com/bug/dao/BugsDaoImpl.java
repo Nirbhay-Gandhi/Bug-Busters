@@ -51,6 +51,34 @@ public class BugsDaoImpl implements BugsIntf {
 	}
 
 	@Override
+	public void updateBug(Bugs b) throws BugNotFoundException {
+		// TODO Auto-generated method stub
+		Connection con = getConnection();
+		int bugid = b.getUid();
+		String update = "update bugs set Status where bugId =bugid ";
+		if(con != null) {
+		try (PreparedStatement s = con.prepareStatement(update)) {
+
+			s.setObject(10, b.getStatus());
+			
+			
+
+			int count = s.executeUpdate();
+
+
+			System.out.println("no of rows inserted : " + count);
+
+		} catch (SQLException e) {
+			throw new BugNotFoundException("Bug with Id:" + b.getUid() + "not found");
+		}
+		closeConnection(con);
+		}else {
+			System.out.println("Connection could not be established");
+		}
+
+	}
+
+	@Override
 	public Bugs getBug(int id) throws BugNotFoundException {
 
 		Connection con = c.getConnection();

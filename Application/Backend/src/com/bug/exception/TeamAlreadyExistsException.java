@@ -1,13 +1,13 @@
 package bugSmasher.exceptions;
 
-public class BugAlreadyExistsException extends RuntimeException {
+public class TeamAlreadyExistsException extends RuntimeException {
 
-	public BugAlreadyExistsException() {
+	public TeamAlreadyExistsException() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public BugAlreadyExistsException(String message) {
+	public TeamAlreadyExistsException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
